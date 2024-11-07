@@ -1,0 +1,30 @@
+@font-face {
+    font-family:"itemsFont";
+    src: url("/arbeidskrav-24/Mansalva-Regular.ttf");
+}
+
+.article__resources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 250px;
+}
+
+.article__resources img {
+    border-radius: 300px;
+    width: auto;
+    height: auto;
+}
+
+#minesImg:hover {
+    cursor: url('../images/pickaxe-cursor.png'), auto;
+}
+
+#woodsImg:hover {
+    cursor: url('../images/axe-cursor.png'), auto;
+}
+

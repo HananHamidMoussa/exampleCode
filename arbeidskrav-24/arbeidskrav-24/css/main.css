@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "titles";
+    src: url("/arbeidskrav-24/RockSalt-Regular.ttf");
+}
+
+body {
+    background-color: rgba(186, 186, 187, 0.863);
+    height: 100vh;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.header__title {
+    font-size: 100px;
+    margin: 0px;
+    font-family: "titles";
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "itemsFont";
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.article__statusbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    font-family: "titles";
+}
+
+
+.statusbar-item img {
+    width: 90px;
+    height: auto;
+    
+}
+
+.footer {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 0; 
+}
+
+.footer-txt {
+    text-align: center; 
+    font-family: 'titles';
+}
+
+/* STANDARDSKJERM BRUKT 2560PX/*
+
+/* NETTBRETT*/
+@media only screen and (max-width: 768px){
+    .header__title {
+        font-size: 70px;
+    }
+    .header {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }   
+    .footer {
+        flex-direction: column; /* Stabler elementene vertikalt på mindre skjermer */
+        padding: 15px;
+    }
+
+    .footer-section {
+        margin-bottom: 10px; 
+    }
+
+    .footer-txt {
+        font-size: 14px; 
+    }
+}
+
+
+/* MOBILTELEFONER */ 
+@media only screen and (max-width:480px){
+    .header__title {
+        font-size: 40px;
+    }
+    .header {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .navbar a {
+        margin: 0 20px;
+        font-size: 11px;
+    }
+    .article__statusbar {
+        height: 50px;
+    }
+
+    .statusbar-item img {
+        width: 40px;
+        height: auto;
+    }
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-txt {
+        font-size: 12px; 
+    }
+}
+

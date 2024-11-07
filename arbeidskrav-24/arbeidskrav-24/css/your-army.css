@@ -1,0 +1,75 @@
+@font-face {
+    font-family:"itemsFont";
+    src: url("/arbeidskrav-24/Mansalva-Regular.ttf");
+} 
+
+.article__army-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    justify-content: center;
+    padding: 20px;
+}
+
+.article__army-warriors-title, 
+.article__army-animals-title, 
+.article__army-machines-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'titles';
+}
+
+
+.article__warriors,
+.article__animals,
+.article__machines{
+    text-align: center;
+    font-family: 'titles';
+}
+
+.army-object {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.army-object {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.army-object h3 {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'titles';
+}
+
+.army-object img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50px; /* Viktig: border-radius 50px */
+    padding: 10px;
+    background-color: white;
+    border: 2px solid rgb(68, 60, 60);
+}
+
+
+.article__searchBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.article__searchBar input[type="search"] {
+    width: 30%;
+    height: auto;
+    font-size: 18px;
+}
+
+.article__searchBar button{
+    padding: 10px 50px;
+}
+
